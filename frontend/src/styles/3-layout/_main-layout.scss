@@ -1,0 +1,17 @@
+.main-layout {
+    display: flex;
+    // padding: 0 80px;
+    // border: 1px white solid;
+
+    max-width: 90vw;
+    margin: 0 auto;
+    > *.full{
+        width: 100%;
+    }
+}
+
+@media only screen and (max-width: $break-small) {
+    html{
+        font-size: 12px;
+    }
+}

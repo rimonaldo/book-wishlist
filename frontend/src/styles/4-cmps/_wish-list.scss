@@ -1,0 +1,28 @@
+.wish-list {
+  height: 100%;
+  padding: 0 5em;
+
+  .wish-preview {
+    width: 100%;
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 1em;
+    height: 50px;
+    .mark {
+        width: 3px;
+        position: absolute;
+        left: -3px;
+        background-color: orange;
+        height: 100%;
+    }
+    body {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      border: 1px rgb(224, 224, 224) solid;
+      width: 100%;
+    }
+  }
+}

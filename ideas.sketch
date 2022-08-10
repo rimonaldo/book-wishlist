@@ -1,0 +1,28 @@
+- cmps :
+book-details{
+    header{
+        title
+        checkbox--> save to wishlist
+    }
+
+    body{
+        author
+        description
+        over-flow-y scroll
+    }
+
+    footer{
+        rating
+        price
+    }
+
+    // needs to recive book prop
+    // wrraped by left-right arrows to scroll between books 
+    // idx? id?
+}
+
+wish-list {
+    design mark
+    title
+    button--> remove 
+}

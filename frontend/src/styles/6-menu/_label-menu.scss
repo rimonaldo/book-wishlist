@@ -1,0 +1,192 @@
+// SET POSITION IN CARD PREVIEW
+.preview {
+  .modal {
+    position: absolute;
+    left: 0;
+  }
+}
+.modal {
+  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Noto Sans,
+    Ubuntu, Droid Sans, Helvetica Neue, sans-serif;
+
+  header {
+    font-weight: 500;
+    color: #5f6d85;
+    line-height: 1.5em;
+    margin-bottom: 5px;
+  }
+  .labels {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 1em;
+    .label {
+      color: white;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      border-radius: 3px;
+      margin-bottom: 3px;
+      width: 90%;
+      position: relative;
+      transition: 0.2s;
+      height: 32px;
+      .title {
+        margin-inline-start: 1em;
+      }
+      &:hover {
+        cursor: pointer;
+        padding-left: 5px;
+        background-color: green;
+      }
+
+      .pad {
+        position: absolute;
+        width: 10%;
+        // background-color: inherit;
+        // border: 1px black solid;
+        .top {
+          width: 100%;
+          height: 100%;
+          position: absolute;
+        }
+        .bottom {
+          position: absolute;
+          width: 100%;
+          height: 100%;
+        }
+        left: -1em;
+        height: 100%;
+        top: 0;
+      }
+    }
+    .icon {
+      position: absolute;
+      height: 100%;
+      right: -2.5em;
+      width: 2em;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      border-radius: 3px;
+      &::before {
+        content: "\e928";
+        font-size: 16px;
+        color: #465571;
+      }
+      &:hover {
+        cursor: pointer;
+        background-color: rgb(243, 243, 243);
+      }
+    }
+  }
+
+  .btn.create {
+    font-size: 14px;
+    width: 100%;
+    border: none;
+    border-radius: 5px;
+    background-color: #f5f6f8;
+    padding: 0 1em;
+    line-height: 2rem;
+    color: #40506c;
+    cursor: pointer;
+    transition: 0.2;
+    &:hover {
+      background-color: #eaecf0;
+    }
+    margin-bottom: 0.7em;
+  }
+  .create-btn {
+  }
+
+  .icon.back {
+    position: absolute;
+    left: 0.7em;
+    &:hover {
+      color: black;
+      cursor: pointer;
+    }
+    &::before {
+      font-size: 18px;
+      content: "\e90a";
+    }
+  }
+  .colors-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(50px, 1fr));
+    gap: 3.8px;
+
+    .color {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      span {
+        color: white;
+        font-size: 16px;
+      }
+      cursor: pointer;
+      min-height: 2.5em;
+      border-radius: 3px;
+      transition: 0.1s;
+      &:hover {
+        opacity: 80%;
+      }
+    }
+
+    margin-bottom: 2em;
+  }
+
+
+  
+  button.create-btn {
+    background-color: #0079bf;
+    color: white;
+    border: none;
+    width: auto;
+    font-size: 14px;
+    text-align: center;
+    font-weight: 100;
+    border-radius: 3px;
+    padding: 0 1.5em;
+    line-height: 32px;
+    transition: 0.1s;
+    cursor: pointer;
+    &:hover {
+      background-color: #025d93;
+    }
+    margin-bottom: 0.7em;
+  }
+
+  .delete {
+    transition: 0.1s;
+    font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Noto Sans,
+      Ubuntu, Droid Sans, Helvetica Neue, sans-serif;
+    background-color: #b04632;
+    color: white;
+    font-weight: 100;
+    letter-spacing: 0.5px;
+    font-size: 16px;
+    &:hover {
+      background-color: #8b3827;
+    }
+  }
+
+  .btns {
+
+    display: flex;
+    justify-content: space-between;
+
+    .delete {
+      background-color: #b04632;
+
+      &:hover {
+        background-color: #8b3827;
+      }
+    }
+  }
+  div.warning {
+    color: #172b4d;
+    margin-bottom: 1em;
+  }
+}

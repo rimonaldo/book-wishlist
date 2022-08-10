@@ -1,0 +1,35 @@
+[
+  {
+    "title": "newBook",
+    "status": "new",
+    "description": "",
+    "importance": "1",
+    "createdAt": "",
+    "lastTriedAt": null,
+    "triesCount": 0,
+    "doneAt": null,
+    "errors": []
+  },
+  {
+    "title": "newBook",
+    "status": "new",
+    "description": "",
+    "importance": "1",
+    "createdAt": "",
+    "lastTriedAt": null,
+    "triesCount": 0,
+    "doneAt": null,
+    "errors": []
+  },
+  {
+    "title": "oldBook",
+    "status": "new",
+    "description": "",
+    "importance": "1",
+    "createdAt": "",
+    "lastTriedAt": null,
+    "triesCount": 0,
+    "doneAt": null,
+    "errors": []
+  }
+]
